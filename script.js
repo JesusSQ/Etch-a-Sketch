@@ -15,4 +15,32 @@ function paint() {
         div.style.background = 'black';
     }));
 }
-paint();
+
+function eraser() {
+    let divs = document.querySelectorAll('.grid');
+    divs.forEach(div => div.addEventListener('mouseover', () => {
+        div.style.background = 'white';
+    }));
+}
+
+function clean() {
+    let divs = document.querySelectorAll('.grid');
+    divs.forEach(div => div.style.background = 'white');
+}
+
+function waitForButton() {
+    let draw = document.querySelector('.draw');
+    let del = document.querySelector('.eraser');
+    let white = document.querySelector('.clean');
+    del.addEventListener('click', () => {
+        eraser();
+    });
+    draw.addEventListener('click', () => {
+        paint();
+    });
+    white.addEventListener('click', () => {
+        clean();
+    });
+}
+
+waitForButton();
