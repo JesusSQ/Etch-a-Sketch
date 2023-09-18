@@ -1,0 +1,24 @@
+.grid {
+    margin: 0;
+    padding: 0;
+    border-color: black;
+    width: 30px;
+    height: 30px;
+    border: solid;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 576px;
+    width: 576px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
