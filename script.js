@@ -1,13 +1,14 @@
-function createSquares() {
-    let e;
-    let cont = document.querySelector('.container');
-    for (let i = 0; i < 256; i++) {
-        e = document.createElement('div');
-        e.classList.add('grid');
-        cont.appendChild(e);
-    }
+// Creating the grid 
+
+let e;
+let cont = document.querySelector('.container');
+for (let i = 0; i < 256; i++) {
+    e = document.createElement('div');
+    e.classList.add('grid');
+    cont.appendChild(e);
 }
-createSquares();
+
+// Functions
 
 function paint() {
     let divs = document.querySelectorAll('.grid');
@@ -28,19 +29,21 @@ function clean() {
     divs.forEach(div => div.style.background = 'white');
 }
 
-function waitForButton() {
-    let draw = document.querySelector('.draw');
-    let del = document.querySelector('.eraser');
-    let white = document.querySelector('.clean');
-    del.addEventListener('click', () => {
-        eraser();
-    });
-    draw.addEventListener('click', () => {
-        paint();
-    });
-    white.addEventListener('click', () => {
-        clean();
-    });
-}
+// Query Selectors
 
-waitForButton();
+let draw = document.querySelector('.draw');
+let del = document.querySelector('.eraser');
+let white = document.querySelector('.clean');
+
+// Event Listeners
+
+del.addEventListener('click', () => {
+    eraser();
+});
+draw.addEventListener('click', () => {
+    paint();
+});
+
+white.addEventListener('click', () => {
+    clean();
+});

@@ -1,24 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 .grid {
     margin: 0;
     padding: 0;
     width: 30px;
     height: 30px;
+    background: white;
 }
 
 .container {
-    margin: 0;
+    margin: 0px;
+    margin-top: 54px;
     padding: 0;
-    height: 480px;
     width: 480px;
+    height: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: solid;
     border-color: black;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 body {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    font-family: 'poppins', sans-serif;
+    height: 1000px;
+}
+
+.info p {
+    padding: 12px;
+    max-width: 400px;
+}
+
+.title {
+    margin-top: 54px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    border: solid;
+    border-color: black;
+    border-radius: 34px;
+    background: #90EE90;
+}
+
+h1 {
+    border-bottom: solid;
+    border-color: #f3f3f3;
+    border-width: 3px;
+    font-weight: 900;
+    font-size: 32px;
+    align-self: center;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    width: 400px;
+    height: auto;
     justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    padding: 8px;
+    border-radius: 22px;
+    border-width: 2px;
+    border: solid;
+    background: slateblue;
+    border-color: black;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    background: #f3f3f3;
+    color: black;
+}
+
+img {
+    width: 30px;
+}
+
+.footer {
+    background: #1f2937;
+    color: white;
+    width: 100%;
+    border-top: solid;
+    border-color: black;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
